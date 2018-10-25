@@ -17,3 +17,34 @@ react updates just that component to the virtual dom
 then it updates the actual DOM
 
 react uses jsx (which looks like html) that holds STATE
+
+how to create a react component?
+use js classes (classes are a way to create a blue-print objects in js)
+or
+xxx
+
+this script tag in the head --
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+allows us to create react components
+
+EVERY react CLASS BASED component must have ONE function in it called RENDER(){} that RETURNS a value
+this renders the tempate to the div on the html
+you can ONLY return ONE thing so wrap it in a div and return the div which can contain
+multiple elements... h1, h2, p, etc...
+
+this script tag in the head --
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+allows us to take a classed based component and stick it in the DOM
+via ReactDOM.render(
+<param1 />, param2('xxx'));
+ex.
+ReactDOM.render(
+<App />, document.getElementById('app'));
+to output DYNAMIC content, try <p>{ }</p>
+
+jsx limitations
+only return ONE root element - like a div
+that returned element can not have a css "CLASS=''" but you can use className="xxx"
+
+Component State is a js object that describes the data or ui-state
+You can also define state in a constructor method
