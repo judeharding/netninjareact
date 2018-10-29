@@ -44,7 +44,29 @@ to output DYNAMIC content, try <p>{ }</p>
 
 jsx limitations
 only return ONE root element - like a div
-that returned element can not have a css "CLASS=''" but you can use className="xxx"
+that returned element can not have a css "CLASS=''" but yo ucan use className="xxx"
 
 Component State is a js object that describes the data or ui-state
 You can also define state in a constructor method
+
+CREATE REACT APP is a command line tool to create react apps
+with a dev server
+uses E6S
+keeps code modular
+access to dev tools to optimize code
+HOW?
+npx create-react-app my-app
+cd my-app
+npm start
+
+The public folder holds the index.html
+- The src folder holds all of the code
+- the App.js folder is the root compentent that is rendered to the html
+- additional components are NESTED in the root component
+All component names START WITH A CAP. parent and child components
+WHY? b/c you can control "state" easier in components
+PROPS allow you to pass data from the component to the child (properties)
+
+2 type of components - Container and UI
+- CONTAINER components hold state, not concerned with ui, lifecycle hooks and use classes to create
+- UI components don't contain state, do receive data from props, use functions to create
