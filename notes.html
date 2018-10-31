@@ -75,3 +75,24 @@ PROPS allow you to pass data from the component to the child (properties)
 
 
 CONDITIONAL OUTPUT based on data
+
+------------------------------
+
+Component Life Cycle HOOKS
+mounting phase -
+- created and first mounts the DOM
+- constructor - (can set the state)
+- getDerivedStateFromProps - updates a components' internal state
+- render - takes jsx code and prepares it to render to the DOM
+- componentDidMount - fires once the component first mounts from a db
+
+updating phase
+- getDerivedStateFromProps checks state with current dom
+- shouldComponentUpdate
+- render
+- getSnapshotBeforeUpdate
+- react updates DOM and refs
+- componenDidUpdate
+
+unmounting phase
+- componentWillUnmount
