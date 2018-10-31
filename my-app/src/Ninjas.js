@@ -50,6 +50,9 @@ export default Ninjas;
 
 // **************
 // class Xxxxx extends Component {
+      // state = {
+
+      // }
 //     render(){
 //         return (
 //             <div className="xxx">
